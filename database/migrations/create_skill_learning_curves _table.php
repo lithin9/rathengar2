@@ -18,7 +18,8 @@
 					$table->smallInteger('learningCurveLevel');
 					$table->primary('learningCurveLevel');
 					$table->string('label');
-					$table->
+					$table->smallInteger("difficultyCheck");
+					$table->smallInteger("passesRequired");
 					$table->timestamps();
 					$table->timestamp('deleted_at')
 								->nullable();

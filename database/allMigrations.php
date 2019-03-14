@@ -15,7 +15,7 @@
 		'CreateAttributesTable',
 		'CreateSkillTypesTable',
 		'CreateSkillsTable',
-		'',
+		'CreateSkillLearningCurvesTable',
 		'CreateCharacterSkillsTable',
 		'CreateRacesTable'];
 	foreach ($migrationOrder as $migration) {
