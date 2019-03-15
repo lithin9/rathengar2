@@ -13,11 +13,22 @@
 		'CreateUsersTable',
 		'CreateCharactersTable',
 		'CreateAttributesTable',
+		'CreateSoulsTable',
+		'CreateElementCategoriesTable', //TODO: finish this
+		'CreateElementGodsTable', //TODO: finish this
+		'CreateElementsTable', //TODO: finish this
+		'CreateRacesTable',
 		'CreateSkillTypesTable',
 		'CreateSkillsTable',
+		'CreateSpellPartsTable', //TODO: finish this
+		'CreateSpellEffectsTable', //TODO: finish this
+		'CreateElementsTable', //TODO: finish this
+		'CreateRaceAttributesTable', //TODO: finish this
+		'CreateSoulAttributesTable', //TODO: finish this
+		'CreateSKillAttributesTable', //TODO: finish this
 		'CreateSkillLearningCurvesTable',
 		'CreateCharacterSkillsTable',
-		'CreateRacesTable'];
+		''];
 	foreach ($migrationOrder as $migration) {
 		try {
 			if(class_exists(database\migrations\$migration)) {
