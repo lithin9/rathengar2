@@ -9,7 +9,7 @@
 	 * "@php artisan migrate  --path=/database/allMigrations.php"
 	 * ]
 	 */
-	$migrationOrder = [
+	$migrationBaseOrder = [
 		'CreateUsersTable',
 		'CreateCharactersTable',
 		'CreateAttributesTable',
@@ -23,12 +23,16 @@
 		'CreateSpellPartsTable', //TODO: finish this
 		'CreateSpellEffectsTable', //TODO: finish this
 		'CreateElementsTable', //TODO: finish this
-		'CreateRaceAttributesTable', //TODO: finish this
-		'CreateSoulAttributesTable', //TODO: finish this
-		'CreateSKillAttributesTable', //TODO: finish this
 		'CreateSkillLearningCurvesTable',
 		'CreateCharacterSkillsTable',
 		''];
+	$migrationAttributeTables = [
+		'CreateRaceAttributesTable', //TODO: finish this
+		'CreateSoulAttributesTable', //TODO: finish this
+		'CreateSKillAttributesTable', //TODO: finish this
+		'CreateCharacterAttributesTable', //TODO: finish this
+	];
+	$migrationOrder
 	foreach ($migrationOrder as $migration) {
 		try {
 			if(class_exists(database\migrations\$migration)) {
