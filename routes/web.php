@@ -14,7 +14,5 @@
 Route::get('/', function () {
     return view('welcome');
 });
-Route::get('themetest', function () {
-    return view('layouts.master');
-});
+
 
