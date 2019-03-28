@@ -16,7 +16,7 @@
 
 @section('content')
 
-	<p>Welcome to rpHUB you naughty slut.</p>
+	<p>A place for managing campaigns.</p>
 
 @stop
 

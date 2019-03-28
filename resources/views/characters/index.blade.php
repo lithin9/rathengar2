@@ -16,7 +16,7 @@
 
 @section('content')
 
-	<p>Welcome to rpHUB you naughty slut.</p>
+	<p>All things character related. Building player or non player characters, and managing them.</p>
 
 @stop
 
