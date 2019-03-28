@@ -13,7 +13,7 @@ return [
     |
     */
 
-    'title' => 'AdminLTE 2',
+    'title' => 'rpHUB',
 
     'title_prefix' => '',
 
@@ -45,7 +45,7 @@ return [
     |
     */
 
-    'skin' => 'blue',
+    'skin' => 'red',
 
     /*
     |--------------------------------------------------------------------------
@@ -130,17 +130,17 @@ return [
         [
             'text' => 'Worlds',
             'url'  => 'user/worlds',
-            'icon' => 'fa-globe-europe',
+            'icon' => 'globe-europe',
         ],
         [
             'text' => 'Campaigns',
             'url'  => 'user/campaigns',
-            'icon' => 'analytics',
+            'icon' => 'map-signs',
         ],
         [
             'text' => 'Characters',
             'url'  => 'user/characters',
-            'icon' => 'body',
+            'icon' => 'user-ninja',
         ],
         [
             'text'    => 'Multilevel',
