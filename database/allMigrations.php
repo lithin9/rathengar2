@@ -1,14 +1,7 @@
 <?php
-	/**
-	 * Created by PhpStorm.
-	 * User: Robert Van Loon
-	 * Date: 3/12/2019
-	 * Time: 12:04 PM
-	 *
-	 * "migrate": [
-	 * "@php artisan migrate  --path=/database/allMigrations.php"
-	 * ]
-	 */
+
+	use Illuminate\Support\Facades\Log;
+
 	$migrationBaseOrder = [
 		'CreateUsersTable',
 		'CreateCharactersTable',
@@ -32,16 +25,19 @@
 		'CreateSKillAttributesTable', //TODO: finish this
 		'CreateCharacterAttributesTable', //TODO: finish this
 	];
-	$migrationOrder
+	$migrationOrder           = $migrationBaseOrder + $migrationAttributeTables;
 	foreach ($migrationOrder as $migration) {
 		try {
-			if(class_exists(database\migrations\$migration)) {
-				$migrate = new database\migrations\$migration();
-				$migrate->up();
+			$mString = "\\database\\migrations\\$migration";
+			var_dump(class_exists("\\database\\migrations\\CreateUsersTable"));
+			if(class_exists($mString)) {
+				$migrate = new $mString();
+				//$migrate->up();
 			} else {
 				throw new Exception("Migration does not exist.");
 			}
 		} catch(Exception $e) {
-			\Illuminate\Support\Facades\Log::error("Failed to finish migration: " . $migration . ". For reason: " . $e->getMessage());
+			echo $e->getMessage();
+			//Log::error("Failed to finish migration: " . $migration . ". For reason: " . $e->getMessage());
 		}
 	}
