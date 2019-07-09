@@ -63,13 +63,13 @@
 				'CreateGuildsTable', //TODO: finish this
 				'CreateGuildLanguagesTable', //TODO: finish this
 				'CreateGuildRanksTable', //TODO: finish this
-				'CreateLocationMapCoordinatesTable', //TODO: finish this
-				'CreateLocationDetailsTypeTable', //TODO: finish this
-				'CreateLocationDetailsTable', //TODO: finish this
-				'CreateLocationFactionsTable', //TODO: finish this
-				'CreateLocationsTable', //TODO: finish this
-				'CreateMapCoordinatesTable', //TODO: finish this
 				'CreateMapsTable', //TODO: finish this
+				'CreateMapCoordinatesTable', //TODO: finish this
+				'CreateLocationsTable', //TODO: finish this
+				'CreateLocationMapCoordinatesTable', //TODO: finish this
+				'CreateLocationDetailsTable', //TODO: finish this
+				'CreateLocationDetailsTypesTable', //TODO: finish this
+				'CreateLocationFactionsTable', //TODO: finish this
 				'CreateBirthPlacesTable', //TODO: finish this
 				'CreateBirthPlaceBackgroundsTable', //TODO: finish this
 				'CreateLevelRoadmapsTable', //TODO: finish this
@@ -129,13 +129,44 @@
 				'CreateCharacterLanguagesTable', //TODO: finish this
 				'CreateCharacterStarSignsTable', //TODO: finish this
 			];
+			$migrationNotesTables = [
+				'CreateUserNotesTable', //TODO: finish this
+				'CreateCharacterNotesTabl', //TODO: finish this
+				'CreateAttributeNotesTable', //TODO: finish this
+				'CreateSoulNotesTable', //TODO: finish this
+				'CreateRaceNotesTable', //TODO: finish this
+				'CreateStatuseNotesTable', //TODO: finish this
+				'CreatePerkNotesTable', //TODO: finish this
+				'CreateItemNotesTable', //TODO: finish this
+				'CreateStarSignNotesTable', //TODO: finish this
+				'CreateAlignmentNotesTable', //TODO: finish this
+				'CreatePersonalityNotesTable', //TODO: finish this
+				'CreateLanguageNotesTable', //TODO: finish this
+				'CreateBackgroundNotesTable', //TODO: finish this
+				'CreateFactionNotesTable', //TODO: finish this
+				'CreateFactionRankNotesTable', //TODO: finish this
+				'CreateGuildNotesTable', //TODO: finish this
+				'CreateGuildRankNotesTable', //TODO: finish this
+				'CreateLocationMapCoordinateNotesTable', //TODO: finish this
+				'CreateLocationDetailsTypNoteeTable', //TODO: finish this
+				'CreateLocationDetailNotesTable', //TODO: finish this
+				'CreateLocationNotesTable', //TODO: finish this
+				'CreateMapCoordinateNotesTable', //TODO: finish this
+				'CreateMapNotesTable', //TODO: finish this
+				'CreateBirthPlaceNotesTable', //TODO: finish this
+				'CreateBirthPlaceBackgroundNotesTable', //TODO: finish this
+				'CreateSkillTypeNotesTable', //TODO: finish this
+				'CreateSkillNotesTable', //TODO: finish this
+				'CreateSkillLearningCurveNotesTable', //TODO: finish this
+			];
 			$migrationOrder = $migrationBaseOrder
 												+ $migrationGameDataTables
 												+ $migrationSkillTables
 												+ $migrationPerksTables
 												+ $migrationSpellElementTables
 												+ $migrationAttributeTables
-												+ $migrationCharacterTables;
+												+ $migrationCharacterTables
+												+ $migrationNotesTables;
 			foreach ($migrationOrder as $migration) {
 				try {
 					$mString = "database\\migrations\\$migration";
