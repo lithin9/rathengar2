@@ -54,6 +54,12 @@
 				];
 			$migrationGameDataTables = [
 				'CreateGameDataTable', //TODO: finish this
+				'CreateTimeTypesTable', //TODO Finish this -
+				// Year = 400 days, 12 months, 80 weeks
+				// -|- month = 25 days -|- week = 5 days -|- day = 20 hours -|- hour = 50 minutes
+				// -|- minute = 100 seconds -|- turn = 5 seconds
+				//Side note for training info, 10 training points per day, 1 per hour
+				'CreateTimesTable', //TODO: finish this
 				'CreateCalendarsTable', //TODO: finish this
 				'CreateCalendarDetailTypesTable', //TODO: finish this - descriptor things like "season", "month", "holiday", "temperatures"
 				'CreateCalendarDetailsTable', //TODO: finish this - descriptors for seasons (spring, summer, fall, winter), months (names of months)
