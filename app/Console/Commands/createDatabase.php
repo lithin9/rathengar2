@@ -37,11 +37,11 @@
 		 */
 		public function handle() {
 			$migrationBaseOrder = [
-				'CreateUsersTable',
-				'CreateCharactersTable',
-				'CreateAttributesTable',
-				'CreateSoulsTable',
-				'CreateRacesTable',
+				'CreateUsersTable', //TODO: add model for this
+				'CreateCharactersTable', //TODO: add model for this
+				'CreateAttributesTable', //TODO: add model for this
+				'CreateSoulsTable', //TODO: add model for this
+				'CreateRacesTable', //TODO: add model for this
 				'CreateStatusesTable', //TODO: finish this
 				'CreateStatusEffectsTable', //TODO: finish this
 				'CreatePerksTable', //TODO: finish this
@@ -55,8 +55,9 @@
 			$migrationGameDataTables = [
 				'CreateGameDataTable', //TODO: finish this
 				'CreateCalendarsTable', //TODO: finish this
-				'CreateCalendarDetailsTable', //TODO: finish this
-				'CreateCalendarDetailTypesTable', //TODO: finish this
+				'CreateCalendarDetailTypesTable', //TODO: finish this - descriptor things like "season", "month", "holiday", "temperatures"
+				'CreateCalendarDetailsTable', //TODO: finish this - descriptors for seasons (spring, summer, fall, winter), months (names of months)
+				'CreateCalendarHistoriesTable', //TODO: finish this
 				'CreateFactionsTable', //TODO: finish this
 				'CreateFactionLanguagesTable', //TODO: finish this
 				'CreateFactionRanksTable', //TODO: finish this
@@ -75,9 +76,9 @@
 				'CreateLevelRoadmapsTable', //TODO: finish this
 			];
 			$migrationSkillTables = [
-				'CreateSkillTypesTable',
-				'CreateSkillsTable',
-				'CreateSkillLearningCurvesTable',
+				'CreateSkillTypesTable', //TODO: add model for this
+				'CreateSkillsTable', //TODO: add model for this
+				'CreateSkillLearningCurvesTable', //TODO: add model for this
 				'CreateBirthPlaceSkillsTable', //TODO: finish this
 				'CreateStatusSkillsTable', //TODO: finish this
 				'CreateBackgroundSkillsTable', //TODO: finish this
@@ -113,7 +114,7 @@
 			];
 			$migrationCharacterTables = [
 				'CreateCharacterAttributesTable', //TODO: finish this
-				'CreateCharacterSkillsTable',
+				'CreateCharacterSkillsTable', //TODO: add model for this
 				'CreateCharacterSpellsTable', //TODO: finish this
 				'CreateCharacterSpellPartsTable', //TODO: finish this
 				'CreateCharacterStatusesTable', //TODO: finish this
@@ -129,13 +130,21 @@
 				'CreateCharacterLanguagesTable', //TODO: finish this
 				'CreateCharacterStarSignsTable', //TODO: finish this
 			];
+			$migrationQuestTables = [
+				'CreateQuestTypesTable', //TODO: finish this
+				'CreateQuestsTable', //TODO: finish this
+				'CreateQuestPartTypesTable', //TODO: finish this
+				'CreateQuestPartsTable', //TODO: finish this
+				'CreateQuestRewardTypesTable', //TODO: finish this
+				'CreateQuestRewardsTable', //TODO: finish this
+				];
 			$migrationNotesTables = [
 				'CreateUserNotesTable', //TODO: finish this
 				'CreateCharacterNotesTabl', //TODO: finish this
 				'CreateAttributeNotesTable', //TODO: finish this
 				'CreateSoulNotesTable', //TODO: finish this
 				'CreateRaceNotesTable', //TODO: finish this
-				'CreateStatuseNotesTable', //TODO: finish this
+				'CreateStatusNotesTable', //TODO: finish this
 				'CreatePerkNotesTable', //TODO: finish this
 				'CreateItemNotesTable', //TODO: finish this
 				'CreateStarSignNotesTable', //TODO: finish this
@@ -158,6 +167,7 @@
 				'CreateSkillTypeNotesTable', //TODO: finish this
 				'CreateSkillNotesTable', //TODO: finish this
 				'CreateSkillLearningCurveNotesTable', //TODO: finish this
+				'CreateCalendarNotesTable', //TODO: finish this
 			];
 			$migrationOrder = $migrationBaseOrder
 												+ $migrationGameDataTables
