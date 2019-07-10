@@ -37,7 +37,8 @@
 		 */
 		public function handle() {
 			$migrationBaseOrder = [
-				'CreateUsersTable', //TODO: add model for this
+				'CreateUsersTable',
+				'CreateUserPermissionsTable',
 				'CreateCharactersTable', //TODO: add model for this
 				'CreateAttributesTable', //TODO: add model for this
 				'CreateSoulsTable', //TODO: add model for this

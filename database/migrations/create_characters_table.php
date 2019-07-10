@@ -18,9 +18,9 @@
 					$table->bigIncrements('id');
 					$table->integer('userId');
 					$table->string('name');
-					$table->boolean('isNPC');
-					$table->integer('level');
-					$table->bigInteger('exp');
+					$table->boolean('isNPC'); // TODO: Move to attributes table
+					$table->integer('level'); // TODO: Move to attributes table
+					$table->bigInteger('exp'); // TODO: Move to attributes table
 					$table->timestamps();
 					$table->timestamp('deleted_at')
 								->nullable();
