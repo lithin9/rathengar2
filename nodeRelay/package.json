@@ -1,0 +1,15 @@
+{
+  "name": "noderelay",
+  "version": "1.0.0",
+  "description": "Discord Listener Relay",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Robert Van Loon",
+  "license": "ISC",
+  "dependencies": {
+    "discord.js": "^12.2.0",
+    "dotenv": "^8.2.0"
+  }
+}

@@ -12,9 +12,7 @@
     "facade/ignition": "^2.0",
     "fideloper/proxy": "^4.0",
     "laravel/framework": "^7.0",
-    "laravel/tinker": "^2.0",
-    "more-cores/laravel-restcord": "2.*",
-    "socialiteproviders/discord": "^2.0"
+    "laravel/tinker": "^2.0"
   },
   "require-dev": {
     "barryvdh/laravel-debugbar": "^3.2",
