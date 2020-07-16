@@ -11,6 +11,12 @@
 |
 */
 
-Route::get('/', function () {
+	use Illuminate\Http\Request;
+
+	Route::get('/', function () {
     return view('welcome');
 });
+
+	Route::get('/character', function (Request $request) {
+		return "This is a hello from Laravel! The connect worked properly.";
+	});

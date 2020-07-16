@@ -2,13 +2,15 @@
   "name": "noderelay",
   "version": "1.0.0",
   "description": "Discord Listener Relay",
-  "main": "index.js",
+  "main": "bot.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Robert Van Loon",
   "license": "ISC",
   "dependencies": {
+    "axios": "^0.19.2",
+    "discord-akairo": "^8.0.0",
     "discord.js": "^12.2.0",
     "dotenv": "^8.2.0"
   }
